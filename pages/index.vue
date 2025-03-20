@@ -1,5 +1,5 @@
 <template>
     <div>
-        Page for index
+        Page for index vue
     </div>
 </template>
