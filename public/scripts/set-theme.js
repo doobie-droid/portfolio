@@ -1,10 +1,12 @@
 function SetTheme() {
   try {
-    const isDarkMode = localStorage.getItem("isDarkMode");
-    if (isDarkMode === "true") {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
       document.documentElement.classList.add("dark");
-    } else {
+    } else if (theme === "light") {
       document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
     }
   } catch (err) {
     console.log(err);
