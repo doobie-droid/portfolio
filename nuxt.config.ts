@@ -4,6 +4,12 @@ export default defineNuxtConfig({
     baseURL: "/portfolio/",
     head: {
       title: "Portfolio",
+      script: [
+        {
+          src: "/scripts/set-theme.js",
+          type: "text/javascript",
+        },
+      ],
       meta: [
         {
           name: "description",

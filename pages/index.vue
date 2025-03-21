@@ -3,7 +3,8 @@
         <div class="dark:bg-neutral-900 dark:text-white w-full sm:w-[80%] flex justify-between px-4 sm:px-20 pt-5">
             <div><a href="/" aria-label="Home">Home</a> </div>
             <div>
-                <NuxtLink to="/about" class="hover:underline text-primary-200 bg-primary text-pr">About</NuxtLink>
+                <NuxtLink to="/about" class="text-blue-500 hover:underline">About
+                </NuxtLink>
                 <NuxtLink to="/project" class="text-blue-500 hover:underline">Projects</NuxtLink>
                 <NuxtLink to="/open-source" class="text-blue-500 hover:underline">Open Source</NuxtLink>
                 <NuxtLink to="/blog" class="text-blue-500 hover:underline">Blog</NuxtLink>
@@ -21,16 +22,11 @@
 </template>
 <script>
 export default {
-    // data() {
-    //     return {
-    //         message: "Hello, Nuxt!",
-    //     };
-    // },
     methods: {
         toggleDarkMode() {
             const htmlElement = document.documentElement;
             const isDarkMode = htmlElement.classList.toggle("dark");
-            // alert(isDarkMode)
+            localStorage.setItem("isDarkMode", isDarkMode)
         },
     },
 };
