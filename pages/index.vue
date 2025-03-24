@@ -1,5 +1,7 @@
 <template>
-    <div class=" bg-gray-100 dark:bg-black min-h-screen flex justify-center">
+    <div class=" bg-gray-100 dark:bg-black min-h-screen flex justify-center ">
+
+
         <div class="bg-white  dark:bg-neutral-900  dark:text-white w-full sm:w-[80%] ">
             <div class="flex justify-between px-4 sm:px-20 pt-5 ">
                 <div

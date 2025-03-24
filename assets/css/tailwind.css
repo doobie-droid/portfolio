@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html ::selection {
+  background-color: black;
+  color: white;
+}
+
+html ::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+html.dark ::selection {
+  background-color: green;
+}
+html.dark ::-moz-selection {
+  background-color: green;
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  pointer-events: none;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html.dark .circle {
+  background-color: white;
+}
