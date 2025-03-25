@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "This is a static website of the online portfolio of Douglas Leslie, containing links to open source contributions, personal projects, work history, tutorials and other tech related doings",
+            "This is a static website of the online portfolio of Douglas Leslie, containing links to open source contributions, personal projects, work history, tutorials and other tech related doings deemed relevant",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
