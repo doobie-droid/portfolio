@@ -101,7 +101,7 @@
                     <a class="h-8 w-8 block text-zinc-400  hover:text-[#00843D] dark:hover:text-yellow-400 transition"
                         aria-label="Medium Link" href="https://medium.com/@doobie-droid">
                         <svg fill="currentcolor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <title>medium</title>
+                            <title>Medium</title>
                             <path
                                 d="M30.955 16c0 3.951-0.661 7.166-1.483 7.166s-1.483-3.215-1.483-7.166 0.661-7.166 1.483-7.166 1.483 3.215 1.483 7.166zM27.167 16c0 4.412-1.882 8.001-4.212 8.001s-4.225-3.589-4.225-8.001 1.894-8.001 4.225-8.001 4.212 3.589 4.212 8.001zM17.919 16c-0.014 4.67-3.803 8.45-8.475 8.45-4.68 0-8.475-3.794-8.475-8.475s3.794-8.475 8.475-8.475c2.351 0 4.479 0.957 6.014 2.504l0.001 0.001c1.521 1.531 2.46 3.641 2.46 5.97 0 0.009 0 0.018-0 0.026v-0.001z">
                             </path>
@@ -110,6 +110,7 @@
                     <a class="h-8 w-8 block text-zinc-400  hover:text-[#00843D] dark:hover:text-yellow-400 transition"
                         aria-label="Contact By Mail" href="mailto:lesliedouglas23@gmail.com">
                         <svg viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <title>Email</title>
                             <path
                                 d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
                                 stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -120,7 +121,7 @@
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
 
-                            <title>github [#142]</title>
+                            <title>Github</title>
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"
                                     fill="currentcolor">
@@ -137,6 +138,7 @@
                     <a class="h-8 w-8 block text-zinc-400  hover:text-[#00843D] dark:hover:text-yellow-400 transition"
                         aria-label="Gitlab" href="https://gitlab.com/doobie-droid">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitLab</title>
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M5.45344 3.3395C5.70395 3.11818 6.02498 3 6.35252 3C6.68005 3 7.00108 3.11818 7.2516 3.3395C7.25863 3.34571 7.26557 3.35202 7.27243 3.35843C7.43524 3.51064 7.55906 3.70268 7.6293 3.91856L9.16251 8.47062C9.29953 8.87744 9.68091 9.15142 10.1102 9.15142H13.8549C14.2845 9.15142 14.6661 8.87706 14.8029 8.46985L16.339 3.89696C16.345 3.87917 16.3515 3.86155 16.3584 3.84412C16.4373 3.6469 16.5615 3.47351 16.7184 3.33626C16.9684 3.11703 17.2879 3 17.6138 3C17.9414 3 18.2624 3.11818 18.5129 3.3395C18.5199 3.34571 18.5269 3.35202 18.5337 3.35843C18.6967 3.51075 18.8206 3.70295 18.8908 3.91902L20.8808 9.84304L21.9167 12.8095C21.9215 12.8232 21.926 12.837 21.9302 12.8509C22.0356 13.2009 22.0212 13.5751 21.8901 13.9158C21.7631 14.2456 21.5352 14.5224 21.2447 14.7122L13.7084 20.0097C12.6733 20.7372 11.293 20.7372 10.258 20.0097L2.7047 14.7003L2.70013 14.6971C2.41336 14.4931 2.195 14.2024 2.08286 13.8625C1.97101 13.5236 1.97246 13.1582 2.08682 12.8202L3.08366 9.83299L5.07768 3.89696C5.08366 3.87917 5.09014 3.86155 5.09711 3.84412C5.17596 3.64691 5.30022 3.47351 5.45712 3.33626L5.45344 3.3395Z"
                                 fill="currentcolor" />
@@ -144,7 +146,9 @@
                     </a>
                     <a class="h-8 w-8 block text-zinc-400   hover:text-[#00843D] dark:hover:text-yellow-400 transition"
                         aria-label="Linkedin" href="https://gitlab.com/doobie-droid">
+
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>LinkedIn</title>
                             <path
                                 d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
                                 fill="currentcolor" />
