@@ -9,7 +9,7 @@
 import ExperienceItem from './ExperienceItem.vue'
 
 export default {
-    name: 'ExperienceList',
+    name: 'ExperienceItemList',
     components: {
         ExperienceItem,
     },

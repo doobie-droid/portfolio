@@ -21,7 +21,7 @@
         </p>
         <h2>Experience</h2>
         <div class="px-24">
-            <ExperienceList :jobs="jobs" />
+            <ExperienceItemList :jobs="jobs" />
         </div>
         <h2>Contact Me</h2>
         <div></div>
@@ -29,12 +29,12 @@
 </template>
 
 <script>
-import ExperienceList from '~/components/ExperienceList.vue';
+import ExperienceItemList from '~/components/ExperienceItemList.vue';
 
 export default {
     name: "About",
     components: {
-        ExperienceList,
+        ExperienceItemList,
     },
     data() {
         return {
