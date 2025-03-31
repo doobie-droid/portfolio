@@ -40,17 +40,20 @@ export default {
                 {
                     company: 'JackWestin',
                     role: 'Backend Engineer',
-                    duration: 'May 2023 - Jan 2025'
+                    duration: 'May 2023 - Jan 2025',
+                    link: "https://jackwestin.com/"
                 },
                 {
                     company: 'TryFlok',
                     role: 'Backend Engineer (Team Lead)',
-                    duration: 'Mar 2022 - Apr 2023'
+                    duration: 'Mar 2022 - Apr 2023',
+                    link: "https://x.com/tryflok"
                 },
                 {
                     company: 'AMIS Group',
                     role: 'Full Stack Developer (Junior)',
-                    duration: 'Mar 2020 - Jan 2022'
+                    duration: 'Mar 2020 - Jan 2022',
+                    link: "https://ashmerlynintsch.com/"
                 }
             ]
         };

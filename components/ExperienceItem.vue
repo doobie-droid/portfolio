@@ -11,7 +11,7 @@
             </span>
         </span>
 
-        <h3 class="mt-6">{{ company }}</h3>
+        <h3 class="mt-6"><a :href=link target="_blank" class="link">{{ company }}</a></h3>
         <p>{{ role }}</p>
         <p>{{ duration }}</p>
     </li>
@@ -33,6 +33,10 @@ export default {
             type: String,
             required: true,
         },
+        link: {
+            type: String,
+            required: true,
+        }
     },
 };
 </script>
