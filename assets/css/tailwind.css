@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  @apply font-mono text-6xl font-extrabold tracking-tighter text-primary dark:text-yellow-400 my-9;
+}
+h2 {
+  @apply font-mono text-4xl font-bold tracking-tight text-primary dark:text-yellow-400 my-9;
+}
+p {
+  @apply text-zinc-600 dark:text-zinc-400 text-lg font-mono leading-7;
+}
+.link {
+  @apply relative block px-3 py-2 transition text-primary dark:text-yellow-400 hover:text-primary_hover dark:hover:text-yellow-400 underline underline-offset-2;
+}
 html ::selection {
   background-color: black;
   color: white;

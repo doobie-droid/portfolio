@@ -5,7 +5,7 @@
             <header class="flex justify-between px-4 sm:px-20 pt-5 sticky top-0 ">
                 <!-- Logo / Home -->
                 <div
-                    class="px-3 py-2 font-mono text-md font-semibold text-zinc-80  hover:text-[#00843D] dark:hover:text-yellow-400">
+                    class="px-3 py-2 font-mono text-md font-semibold text-zinc-80  hover:text-primary_hover dark:hover:text-yellow-400">
                     <a href="/" aria-label="Home">Home</a>
                 </div>
                 <!-- Desktop Navigation -->
@@ -15,24 +15,24 @@
 
                         <li>
                             <NuxtLink to="/about"
-                                class="relative block px-3 py-2 transition hover:text-[#00843D] dark:hover:text-yellow-400">
+                                class="relative block px-3 py-2 transition hover:text-primary_hover dark:hover:text-yellow-400">
                                 About</NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/project"
-                                class="relative block px-3 py-2 transition hover:text-[#00843D] dark:hover:text-yellow-400">
+                                class="relative block px-3 py-2 transition hover:text-primary_hover dark:hover:text-yellow-400">
                                 Projects</NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/open-source"
-                                class="relative block px-3 py-2 transition hover:text-[#00843D] dark:hover:text-yellow-400">
+                                class="relative block px-3 py-2 transition hover:text-primary_hover dark:hover:text-yellow-400">
                                 <span class="hidden lg:block">Open Source</span>
                                 <span class="block lg:hidden">OSS</span>
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/blog"
-                                class="relative block px-3 py-2 transition hover:text-[#00843D] dark:hover:text-yellow-400">
+                                class="relative block px-3 py-2 transition hover:text-primary_hover dark:hover:text-yellow-400">
                                 Blog</NuxtLink>
                         </li>
                     </ul>
@@ -72,7 +72,7 @@
 
             </header>
             <!-- Main content will be injected here -->
-            <main>
+            <main class="my-10 px-4">
                 <NuxtPage />
             </main>
 
@@ -80,25 +80,25 @@
                 class="  pt-40 px-24 pb-14 font-extrabold font-mono flex flex-col lg:flex-row lg:justify-between gap-4 lg:gap-2 justify-center items-center">
                 <div class="flex gap-2  ">
                     <NuxtLink to="/about"
-                        class="relative block px-3 py-2 transition hover:text-[#00843D] dark:hover:text-yellow-400">
+                        class="relative block px-3 py-2 transition hover:text-primary_hover dark:hover:text-yellow-400">
                         About</NuxtLink>
                     <NuxtLink to="/project"
-                        class="relative block px-3 py-2 transition hover:text-[#00843D] dark:hover:text-yellow-400">
+                        class="relative block px-3 py-2 transition hover:text-primary_hover dark:hover:text-yellow-400">
                         Projects</NuxtLink>
                     <NuxtLink to="/open-source"
-                        class="relative block px-3 py-2 transition hover:text-[#00843D] dark:hover:text-yellow-400">
+                        class="relative block px-3 py-2 transition hover:text-primary_hover dark:hover:text-yellow-400">
                         <span class="hidden lg:block">Open Source</span>
                         <span class="block lg:hidden">OSS</span>
                     </NuxtLink>
                     <NuxtLink to="/blog"
-                        class="relative block px-3 py-2 transition hover:text-[#00843D] dark:hover:text-yellow-400">
+                        class="relative block px-3 py-2 transition hover:text-primary_hover dark:hover:text-yellow-400">
                         Blog</NuxtLink>
                 </div>
                 <div class="  flex items-center  text-center text-sm text-zinc-400 dark:text-zinc-500 font-mono">
                     © 2023-{{ new Date().getFullYear() }} Doobie. All rights reserved.
                 </div>
                 <div class="flex gap-3">
-                    <a class="h-8 w-8 block text-zinc-400  hover:text-[#00843D] dark:hover:text-yellow-400 transition"
+                    <a class="h-8 w-8 block text-zinc-400  hover:text-primary_hover dark:hover:text-yellow-400 transition"
                         aria-label="Medium Link" href="https://medium.com/@doobie-droid">
                         <svg fill="currentcolor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <title>Medium</title>
@@ -107,7 +107,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a class="h-8 w-8 block text-zinc-400  hover:text-[#00843D] dark:hover:text-yellow-400 transition"
+                    <a class="h-8 w-8 block text-zinc-400  hover:text-primary_hover dark:hover:text-yellow-400 transition"
                         aria-label="Contact By Mail" href="mailto:lesliedouglas23@gmail.com">
                         <svg viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                             <title>Email</title>
@@ -116,7 +116,7 @@
                                 stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <a class="h-8 w-8 block text-zinc-400   hover:text-[#00843D] dark:hover:text-yellow-400 transition"
+                    <a class="h-8 w-8 block text-zinc-400   hover:text-primary_hover dark:hover:text-yellow-400 transition"
                         aria-label="Check out Github" href="https://github.com/doobie-droid">
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -135,7 +135,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a class="h-8 w-8 block text-zinc-400  hover:text-[#00843D] dark:hover:text-yellow-400 transition"
+                    <a class="h-8 w-8 block text-zinc-400  hover:text-primary_hover dark:hover:text-yellow-400 transition"
                         aria-label="Gitlab" href="https://gitlab.com/doobie-droid">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <title>GitLab</title>
@@ -144,7 +144,7 @@
                                 fill="currentcolor" />
                         </svg>
                     </a>
-                    <a class="h-8 w-8 block text-zinc-400   hover:text-[#00843D] dark:hover:text-yellow-400 transition"
+                    <a class="h-8 w-8 block text-zinc-400   hover:text-primary_hover dark:hover:text-yellow-400 transition"
                         aria-label="Linkedin" href="https://gitlab.com/doobie-droid">
 
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
