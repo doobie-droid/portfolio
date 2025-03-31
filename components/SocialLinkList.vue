@@ -32,6 +32,7 @@ import IconMedium from './icons/IconMedium.vue';
 export default {
     name: "SocialLink",
     components: {
+        SocialLink,
         IconGithub,
         IconGitlab,
         IconLinkedin,
