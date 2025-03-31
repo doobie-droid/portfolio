@@ -20,9 +20,11 @@
             and connect over shared experiences.
         </p>
         <h2>Experience</h2>
-        <div>
+        <div class="px-24">
             <ExperienceList :jobs="jobs" />
         </div>
+        <h2>Contact Me</h2>
+        <div></div>
     </div>
 </template>
 
