@@ -48,6 +48,7 @@ import EmailInput from '~/components/ui/EmailInput.vue';
 import NameInput from '~/components/ui/NameInput.vue';
 import TextAreaInput from '~/components/ui/TextAreaInput.vue';
 import SubmitButton from '~/components/ui/SubmitButton.vue';
+import { useMessageStore } from '#imports';
 
 export default {
     name: "About",
@@ -60,6 +61,7 @@ export default {
     },
     data() {
         return {
+            messageStore: useMessageStore(),
             email: "",
             name: "",
             message: "",
@@ -91,8 +93,16 @@ export default {
         };
     },
     methods: {
-        onSubmitClicked() {
-            confirm("DO YOU WANT TO GO?")
+        async onSubmitClicked() {
+            const payload = {
+                email: this.email,
+                name: this.name,
+                content: this.message,
+
+            }
+            await this.messageStore.SearchPhotos(payload);
+            console.log("the messages")
+            console.log(this.messageStore.GetMessages)
         }
     }
 };
