@@ -1,7 +1,7 @@
 <template>
-    <div class="relative w-full">
+    <div class="relative  w-full  ">
         <input type="email" name="email" id="email"
-            class="peer w-full md:w-1/2 caret-primary dark:caret-yellow-400 p-3 border border-primary dark:border-yellow-400 outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-transparent  placeholder:text-black dark:placeholder:text-white placeholder:font-thin"
+            class="peer w-full  caret-primary dark:caret-yellow-400 p-3 border border-primary dark:border-yellow-400 outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-transparent  placeholder:text-black dark:placeholder:text-white placeholder:font-thin"
             :class="{
                 'focus:outline-primary': !error,
                 'dark:focus:outline-yellow-400': !error,

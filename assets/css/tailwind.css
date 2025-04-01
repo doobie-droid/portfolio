@@ -14,6 +14,7 @@ p {
 .link {
   @apply relative block transition text-primary dark:text-yellow-400 hover:text-primary_hover dark:hover:text-yellow-400 underline underline-offset-2;
 }
+
 html ::selection {
   background-color: black;
   color: white;

@@ -27,10 +27,16 @@
         <div>
 
             <form @submit.prevent="onSubmitClicked" class=" flex flex-col items-center gap-8">
-                <EmailInput v-model:value="email" v-model:error="errors.email" />
-                <NameInput v-model:value="name" v-model:error="errors.name" />
-                <button type="submit"
-                    class=" p-3 w-full md:w-1/6  border border-primary-500 rounded-md bg-green-400 dark:bg-yellow-300 text-black tracking-wide font-extrabold outline-none dark:outline-none  hover:bg-primary hover:dark:bg-yellow-400 focus:outline-none shadow-xl transition-all duration-300 ease-in-out hover:shadow-2xl active:translate-y-1 active:bg-primary-400">Submit</button>
+                <div class="w-full md:w-1/2">
+                    <EmailInput v-model:value="email" v-model:error="errors.email" />
+                </div>
+                <div class="w-full md:w-1/2">
+                    <NameInput v-model:value="name" v-model:error="errors.name" />
+                </div>
+                <div class="w-full md:w-1/2">
+                    <TextAreaInput v-model:value="message" v-model:error="errors.message" />
+                </div>
+                <SubmitButton />
             </form>
         </div>
     </div>
@@ -40,21 +46,27 @@
 import ExperienceItemList from '~/components/ExperienceItemList.vue';
 import EmailInput from '~/components/ui/EmailInput.vue';
 import NameInput from '~/components/ui/NameInput.vue';
+import TextAreaInput from '~/components/ui/TextAreaInput.vue';
+import SubmitButton from '~/components/ui/SubmitButton.vue';
 
 export default {
     name: "About",
     components: {
         ExperienceItemList,
         EmailInput,
-        NameInput
+        NameInput,
+        TextAreaInput,
+        SubmitButton,
     },
     data() {
         return {
             email: "",
             name: "",
+            message: "",
             errors: {
                 email: "",
-                name: ""
+                name: "",
+                message: ""
             },
             jobs: [
                 {
