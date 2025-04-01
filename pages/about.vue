@@ -14,7 +14,7 @@
             <br><br>
             I am currently bootstrapping a startup called <a href="https://leisuretrove.com/" target="_blank"
                 class="link">Leisure
-                Trove.</a>Our
+                Trove.</a> Our
             solution makes it easy for
             people to share
             and connect over shared experiences.
@@ -24,20 +24,31 @@
             <ExperienceItemList :jobs="jobs" />
         </div>
         <h2>Contact Me</h2>
-        <div></div>
+        <div>
+
+            <form @submit.prevent="onSubmitClicked">
+                <EmailInput v-model:value="email" />
+                {{ email }}
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </template>
 
 <script>
 import ExperienceItemList from '~/components/ExperienceItemList.vue';
+import EmailInput from '~/components/ui/EmailInput.vue';
 
 export default {
     name: "About",
     components: {
         ExperienceItemList,
+        EmailInput
     },
     data() {
         return {
+            email: "",
+            error: "",
             jobs: [
                 {
                     company: 'JackWestin',

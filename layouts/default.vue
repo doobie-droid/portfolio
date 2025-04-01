@@ -2,7 +2,7 @@
     <div class=" bg-gray-100 dark:bg-black min-h-screen flex justify-center ">
         <div class="bg-white  dark:bg-neutral-900  dark:text-white w-full sm:w-[80%] ">
             <!-- Header / Navbar -->
-            <header class="flex justify-between px-4 sm:px-20 pt-5 sticky top-0 ">
+            <header class="flex justify-between px-4 sm:px-20 pt-5 sticky top-0 z-10">
                 <!-- Logo / Home -->
                 <NavListItem to="/" :customClass="'text-md font-semibold'">Home</NavListItem>
                 <!-- Desktop Navigation -->
