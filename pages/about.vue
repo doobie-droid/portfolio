@@ -27,9 +27,9 @@
         <div>
 
             <form @submit.prevent="onSubmitClicked">
-                <EmailInput v-model:value="email" />
-                {{ email }}
-                <button type="submit">Submit</button>
+                <EmailInput v-model:value="email" v-model:error="errors.email" />
+
+                <button type="submit" class="mt-6">Submit</button>
             </form>
         </div>
     </div>
@@ -48,7 +48,9 @@ export default {
     data() {
         return {
             email: "",
-            error: "",
+            errors: {
+                email: ""
+            },
             jobs: [
                 {
                     company: 'JackWestin',

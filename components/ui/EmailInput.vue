@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <input type="email" name="email" id="email"
-            class="peer w-full caret-primary dark:caret-yellow-400 p-3 border border-primary dark:border-yellow-400 outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-transparent  placeholder:text-white placeholder:font-thin"
+            class="peer w-full caret-primary dark:caret-yellow-400 p-3 border border-primary dark:border-yellow-400 outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-transparent  placeholder:text-black dark:placeholder:text-white placeholder:font-thin"
             :class="{
                 'focus:outline-primary': !error,
                 'dark:focus:outline-yellow-400': !error,
@@ -10,14 +10,15 @@
             }" placeholder="Email" autocomplete="new-password" :value="value"
             @input="updateEmail($event.target.value)">
         <label for="email"
-            class="absolute opacity-0 text-yellow-400 top-3 left-3 text-sm bg-white dark:bg-neutral-900 peer-focus:-translate-y-6 peer-focus:opacity-100 transition ease-linear"
+            class="absolute opacity-0   top-3 left-3 text-sm bg-white dark:bg-neutral-900 peer-focus:-translate-y-6 peer-focus:opacity-100 transition ease-linear  "
             :class="{
                 'opacity-100': value,
                 '-translate-y-6 ': value,
-                'border-primary-900': value,
-                'text-secondary-200': !error,
+                'text-primary': !error,
+                'dark:text-yellow-400': !error,
                 'text-red-500': error,
             }">Email</label>
+        <span class="text-red-500 text-xs pl-3 mt-2 -mb-4 block">{{ error }}</span>
     </div>
 </template>
 <script>
@@ -38,15 +39,18 @@ export default {
             this.$emit('update:value', email);
         },
     },
-    // watch: {
-    //     value(newValue, oldValue) {
-    //         if (!newValue.includes("@")) {
-    //             this.$emit("update:error", "Your email should contain '@'");
-    //             return;
-    //         }
-    //         this.$emit("update:error", "");
-    //     },
-    // },
+    watch: {
+        value(newValue, oldValue) {
+            if (!newValue.includes("@")) {
+                const err = "Your email should contain '@'"
+                console.log("Setting error:", err)
+                this.$emit("update:error", "Your email should contain '@'");
+                return;
+            }
+            console.log("clearing error")
+            this.$emit("update:error", null);
+        },
+    },
 };
 </script>
 
