@@ -1,10 +1,12 @@
 <template>
     <div class="relative w-full">
         <textarea id="message" name="message" rows="6" " placeholder=" Write your message here..."
-            class="peer w-full  caret-primary dark:caret-yellow-400 p-3 border border-primary dark:border-yellow-400 outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-neutral-900 placeholder:text-black dark:placeholder:text-white placeholder:font-thin bg-transparent"
+            class="peer w-full  caret-primary dark:caret-yellow-400 p-3 border  outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-neutral-900 placeholder:text-black dark:placeholder:text-white placeholder:font-thin bg-transparent"
             :class="{
                 'focus:outline-primary': !error,
                 'dark:focus:outline-yellow-400': !error,
+                'border-primary': !error,
+                'dark:border-yellow-400': !error,
                 'focus:outline-red-500': error,
                 'border-red-500': error,
             }" autocomplete="new-password" :value="value" @input="updateMessage($event.target.value)"></textarea>

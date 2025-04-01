@@ -101,8 +101,8 @@ export default {
 
             }
             await this.messageStore.SearchPhotos(payload);
-            console.log("the messages")
-            console.log(this.messageStore.GetMessages)
+            alert("Thank you for contacting me")
+            location.reload();
         }
     }
 };

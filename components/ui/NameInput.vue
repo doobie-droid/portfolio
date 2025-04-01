@@ -1,13 +1,15 @@
 <template>
     <div class="relative w-full">
         <input type="text" name="text" id="name"
-            class="peer w-full  caret-primary dark:caret-yellow-400 p-3 border border-primary dark:border-yellow-400 outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-transparent  placeholder:text-black dark:placeholder:text-white placeholder:font-thin"
+            class="peer w-full  caret-primary dark:caret-yellow-400 p-3 border outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-transparent  placeholder:text-black dark:placeholder:text-white placeholder:font-thin"
             :class="{
                 'focus:outline-primary': !error,
                 'dark:focus:outline-yellow-400': !error,
+                'border-primary': !error,
+                'dark:border-yellow-400': !error,
                 'focus:outline-red-500': error,
                 'border-red-500': error,
-            }" placeholder="Full Name" autocomplete="new-password" :value="value"
+            }" placeholder=" Full Name" autocomplete="new-password" :value="value"
             @input="updateName($event.target.value)">
         <label for="name"
             class="absolute opacity-0   top-3 left-3 text-sm bg-white dark:bg-neutral-900 peer-focus:-translate-y-6 peer-focus:opacity-100 transition ease-linear  "
