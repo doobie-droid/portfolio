@@ -1,15 +1,15 @@
 <template>
     <div class="relative w-full">
-        <input type="email" name="email" id="email"
+        <input type="text" name="text" id="name"
             class="peer w-full md:w-1/2 caret-primary dark:caret-yellow-400 p-3 border border-primary dark:border-yellow-400 outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-transparent  placeholder:text-black dark:placeholder:text-white placeholder:font-thin"
             :class="{
                 'focus:outline-primary': !error,
                 'dark:focus:outline-yellow-400': !error,
                 'focus:outline-red-500': error,
                 'border-red-500': error,
-            }" placeholder="Email" autocomplete="new-password" :value="value"
-            @input="updateEmail($event.target.value)">
-        <label for="email"
+            }" placeholder="Full Name" autocomplete="new-password" :value="value"
+            @input="updateName($event.target.value)">
+        <label for="name"
             class="absolute opacity-0   top-3 left-3 text-sm bg-white dark:bg-neutral-900 peer-focus:-translate-y-6 peer-focus:opacity-100 transition ease-linear  "
             :class="{
                 'opacity-100': value,
@@ -17,13 +17,13 @@
                 'text-primary': !error,
                 'dark:text-yellow-400': !error,
                 'text-red-500': error,
-            }">Email</label>
+            }">Full Name</label>
         <span class="text-red-500 text-xs pl-3 mt-2 -mb-4 block">{{ error }}</span>
     </div>
 </template>
 <script>
 export default {
-    name: "EmailInput",
+    name: "NameInput",
     props: {
         error: {
             type: String,
@@ -35,19 +35,16 @@ export default {
         },
     },
     methods: {
-        updateEmail(email) {
-            this.$emit('update:value', email);
+        updateName(name) {
+            this.$emit('update:value', name);
         },
     },
     watch: {
         value(newValue, oldValue) {
-            if (!newValue.includes("@")) {
-                const err = "Your email should contain '@'"
-                console.log("Setting error:", err)
-                this.$emit("update:error", "Your email should contain '@'");
+            if (!newValue) {
+                this.$emit("update:error", "Your name is required");
                 return;
             }
-            console.log("clearing error")
             this.$emit("update:error", null);
         },
     },

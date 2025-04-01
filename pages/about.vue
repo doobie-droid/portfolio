@@ -26,10 +26,11 @@
         <h2>Contact Me</h2>
         <div>
 
-            <form @submit.prevent="onSubmitClicked">
+            <form @submit.prevent="onSubmitClicked" class=" flex flex-col items-center gap-8">
                 <EmailInput v-model:value="email" v-model:error="errors.email" />
-
-                <button type="submit" class="mt-6">Submit</button>
+                <NameInput v-model:value="name" v-model:error="errors.name" />
+                <button type="submit"
+                    class=" p-3 w-full md:w-1/6  border border-primary-500 rounded-md bg-green-400 dark:bg-yellow-300 text-black tracking-wide font-extrabold outline-none dark:outline-none  hover:bg-primary hover:dark:bg-yellow-400 focus:outline-none shadow-xl transition-all duration-300 ease-in-out hover:shadow-2xl active:translate-y-1 active:bg-primary-400">Submit</button>
             </form>
         </div>
     </div>
@@ -38,18 +39,22 @@
 <script>
 import ExperienceItemList from '~/components/ExperienceItemList.vue';
 import EmailInput from '~/components/ui/EmailInput.vue';
+import NameInput from '~/components/ui/NameInput.vue';
 
 export default {
     name: "About",
     components: {
         ExperienceItemList,
-        EmailInput
+        EmailInput,
+        NameInput
     },
     data() {
         return {
             email: "",
+            name: "",
             errors: {
-                email: ""
+                email: "",
+                name: ""
             },
             jobs: [
                 {
@@ -73,5 +78,10 @@ export default {
             ]
         };
     },
+    methods: {
+        onSubmitClicked() {
+            confirm("DO YOU WANT TO GO?")
+        }
+    }
 };
 </script>
