@@ -44,6 +44,10 @@ export default {
                 this.$emit("update:error", "Your message is required");
                 return;
             }
+            if (newValue.length < 5) {
+                this.$emit("update:error", "You need to type more than 5 characters");
+                return
+            }
             this.$emit("update:error", null);
         },
     },

@@ -43,11 +43,9 @@ export default {
         value(newValue, oldValue) {
             if (!newValue.includes("@")) {
                 const err = "Your email should contain '@'"
-                console.log("Setting error:", err)
                 this.$emit("update:error", "Your email should contain '@'");
                 return;
             }
-            console.log("clearing error")
             this.$emit("update:error", null);
         },
     },
