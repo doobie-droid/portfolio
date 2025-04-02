@@ -16,7 +16,8 @@
             <ul
                 class="dark:divide-zinc-100/5 dark:text-zinc-300 divide-y font-mono font-black divide-zinc-100 text-base text-zinc-800 -my-2">
                 <li v-for="item in links" :key="item.to">
-                    <NuxtLink class="py-2 block" :to="item.to">{{ item.label }}</NuxtLink>
+                    <NuxtLink class="py-2 block" :to="item.to" @click="$emit('toggle', $event)">{{ item.label }}
+                    </NuxtLink>
                 </li>
             </ul>
         </nav>

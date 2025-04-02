@@ -1,7 +1,7 @@
 <template>
     <div class=" bg-gray-100 dark:bg-black min-h-screen flex justify-center ">
         <Overlay :isHidden="isHidden">
-            <MobileMenu :isHidden="isHidden" @close="isHidden = true" :links="navLinks" />
+            <MobileMenu :isHidden="isHidden" @close="isHidden = true" :links="navLinks" @toggle="toggleMenu" />
         </Overlay>
         <div class="bg-white  dark:bg-neutral-900  dark:text-white w-full sm:w-[80%] ">
 
@@ -77,11 +77,6 @@ export default {
             this.isHidden = !this.isHidden
             menuButton.setAttribute('aria-expanded', String(this.isHidden))
         },
-    },
-    mounted() {
-        this.$router.beforeEach(() => {
-            this.isHidden = true;
-        });
     }
 };
 </script>
