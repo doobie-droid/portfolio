@@ -13,3 +13,21 @@
 
     </div>
 </template>
+
+<script>
+export default {
+    name: "Projects",
+    setup() {
+        useHead({
+            title: 'Projects',
+            meta: [
+                {
+                    name: 'description',
+                    content: 'This page contains details of web applications or cli tools bootstrapped by me.'
+                },
+            ]
+        })
+        return {}
+    },
+};
+</script>

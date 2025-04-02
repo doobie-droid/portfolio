@@ -52,6 +52,22 @@ import { useMessageStore } from '#imports';
 
 export default {
     name: "About",
+    setup() {
+        useHead({
+            title: 'About Me!',
+            meta: [
+                {
+                    name: 'description',
+                    content: 'This page is a short summary of the professional work history of Douglas Leslie!'
+                },
+                {
+                    property: 'og:title',
+                    content: 'About Me! - My Website'
+                }
+            ]
+        })
+        return {}
+    },
     components: {
         ExperienceItemList,
         EmailInput,

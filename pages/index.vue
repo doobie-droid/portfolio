@@ -5,3 +5,18 @@
     </div>
 
 </template>
+
+<script>
+export default {
+    name: "Home",
+    setup() {
+        useHead({
+            title: 'Home 🏠',
+        })
+        return {}
+    },
+    mounted() {
+        this.$router.replace("/about");
+    },
+};
+</script>
