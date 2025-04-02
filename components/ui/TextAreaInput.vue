@@ -1,6 +1,6 @@
 <template>
     <div class="relative w-full">
-        <textarea id="message" name="message" rows="6" " placeholder=" Write your message here..."
+        <textarea id="message" name="message" rows="6" placeholder=" Write your message here..."
             class="peer w-full  caret-primary dark:caret-yellow-400 p-3 border  outline outline-2 outline-transparent focus-visible:border-none focus-visible:outline focus-visible:outline-2 focus:placeholder-transparent bg-neutral-900 placeholder:text-black dark:placeholder:text-white placeholder:font-thin bg-transparent"
             :class="{
                 'focus:outline-primary': !error,
