@@ -10,24 +10,6 @@
                 <p>{{ project.bio }}</p>
                 <p class="text-zinc-800 dark:text-zinc-400 font-sans ">Skills Showcased: {{ project.techStack }}</p>
             </li>
-            <!-- <li>
-                <h2>Job Scraper</h2>
-            </li>
-            <li>
-                <h2>NFT Minting Server</h2>
-            </li>
-            <li>
-                <h2>Unsplash Clone</h2>
-            </li>
-            <li>
-                <h2>Product Management App</h2>
-            </li>
-            <li>
-                <h2>Project Management App</h2>
-            </li>
-            <li>
-                <h2>Appointment Management App</h2>
-            </li> -->
         </ol>
 
     </div>
