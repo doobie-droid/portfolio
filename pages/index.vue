@@ -11,7 +11,7 @@ export default {
     name: "Home",
     setup() {
         useHead({
-            title: 'Home 🏠',
+            title: 'Portfolio - Home 🏠',
         })
         return {}
     },

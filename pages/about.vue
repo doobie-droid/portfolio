@@ -54,7 +54,7 @@ export default {
     name: "About",
     setup() {
         useHead({
-            title: 'About Me!',
+            title: 'Portfolio - About Me!',
             meta: [
                 {
                     name: 'description',

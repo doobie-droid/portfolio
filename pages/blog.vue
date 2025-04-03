@@ -10,7 +10,7 @@ export default {
     name: "Blog",
     setup() {
         useHead({
-            title: 'Blog Entries',
+            title: 'Portfolio - Blog Entries',
             meta: [
                 {
                     name: 'description',

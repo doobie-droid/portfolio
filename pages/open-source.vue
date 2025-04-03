@@ -10,7 +10,7 @@ export default {
     name: "Open Source",
     setup() {
         useHead({
-            title: 'Open Source',
+            title: 'Portfolio - Open Source',
             meta: [
                 {
                     name: 'description',
