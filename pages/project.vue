@@ -5,8 +5,8 @@
             class="pl-20 text-left   list-decimal font-mono text-4xl font-bold tracking-tight text-black dark:text-white">
 
             <li v-for="(project, index) in projects" :key="index" class="my-4 ">
-                <span class="hover:text-primary_hover dark:hover:text-yellow-400"><a :href="project.link"
-                        target="_blank" rel="noopener noreferrer">{{ project.name }}</a></span>
+                <span class="hover:text-primary_hover dark:hover:text-yellow-400 underline underline-offset-4"><a
+                        :href="project.link" target="_blank" rel="noopener noreferrer">{{ project.name }}</a></span>
                 <p>{{ project.bio }}</p>
                 <p class="text-zinc-800 dark:text-zinc-400 font-sans ">Skills Showcased: {{ project.techStack }}</p>
             </li>
