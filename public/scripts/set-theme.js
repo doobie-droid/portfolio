@@ -85,7 +85,10 @@ function showCircles() {
   });
 }
 function SetMouseTrail() {
-  CreateMouseTrail();
+  document.addEventListener("DOMContentLoaded", function () {
+    CreateMouseTrail();
+  });
+
   window.addEventListener("mousemove", function (event) {
     coords.X = event.clientX;
     coords.Y = event.clientY;
