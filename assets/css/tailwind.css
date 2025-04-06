@@ -31,3 +31,18 @@ html.dark ::selection {
 html.dark ::-moz-selection {
   background-color: green;
 }
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  pointer-events: none;
+  background-color: black;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+html.dark .circle {
+  background-color: white;
+}
