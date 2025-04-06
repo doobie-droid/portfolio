@@ -37,7 +37,7 @@ html.dark ::-moz-selection {
   width: 24px;
   border-radius: 24px;
   pointer-events: none;
-  background-color: black;
+  background-color: green;
   top: 0;
   left: 0;
   position: fixed;
@@ -45,5 +45,5 @@ html.dark ::-moz-selection {
 }
 
 html.dark .circle {
-  background-color: white;
+  background-color: yellow;
 }

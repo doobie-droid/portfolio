@@ -65,7 +65,8 @@ function checkCursorStyle() {
   if (
     cursorStyle === "pointer" ||
     cursorStyle === "zoom-in" ||
-    cursorStyle === "zoom-out"
+    cursorStyle === "zoom-out" ||
+    cursorStyle === "text"
   ) {
     hideCircles();
   } else {
