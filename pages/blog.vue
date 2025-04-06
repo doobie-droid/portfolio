@@ -15,7 +15,7 @@ export default {
             meta: [
                 {
                     name: 'description',
-                    content: 'This page is contains details of writeups of Douglas Leslie across several platforms i.e. Medium'
+                    content: 'This page is contains details of write-ups of Douglas Leslie across several platforms i.e. Medium'
                 },
             ]
         })
