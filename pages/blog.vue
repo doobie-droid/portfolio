@@ -1,6 +1,8 @@
 <template>
     <div class="min-h-screen">
-        This is the end
+        <div class="pl-20">
+
+        </div>
     </div>
 </template>
 
