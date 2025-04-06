@@ -41,6 +41,7 @@ html.dark ::-moz-selection {
   top: 0;
   left: 0;
   position: fixed;
+  z-index: 300;
 }
 
 html.dark .circle {

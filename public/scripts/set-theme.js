@@ -19,7 +19,7 @@ const circles = document.querySelectorAll(".circle");
 function CreateMouseTrail() {
   const container = document.documentElement;
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 100; i++) {
     const circle = document.createElement("div");
     circle.classList.add("circle");
     circle.style.opacity = 0;
@@ -50,8 +50,8 @@ function AnimateCircles() {
     circle.x = x;
     circle.y = y;
     const nextCircle = circles[index + 1] || circles[0];
-    x += (nextCircle.x - x) * 0.3;
-    y += (nextCircle.y - y) * 0.3;
+    x += (nextCircle.x - x) * 0.05;
+    y += (nextCircle.y - y) * 0.05;
   });
   requestAnimationFrame(AnimateCircles);
 }
