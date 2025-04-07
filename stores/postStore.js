@@ -4,6 +4,7 @@ import { useNuxtApp } from "#app";
 export const usePostStore = defineStore("posts", {
   state: () => ({
     Posts: [],
+    VisitedPages: {},
   }),
   getters: {
     getPosts: (state) => state.Posts,
@@ -12,7 +13,10 @@ export const usePostStore = defineStore("posts", {
     async fetchPosts(pageNumber = 1) {
       const { $api } = useNuxtApp();
       const response = await $api.post.fetchPosts(pageNumber);
-      this.Posts.push(...response.data);
+      if (!this.VisitedPages[pageNumber]) {
+        this.Posts.push(...response.data);
+      }
+      this.VisitedPages[pageNumber] = true;
     },
   },
 });
