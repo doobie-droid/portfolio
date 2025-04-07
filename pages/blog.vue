@@ -1,21 +1,24 @@
 <template>
     <div class="min-h-screen">
-        <div class="pl-20">
-            <div v-for="post in postStore.getPosts" :key="post.id">
+        <div class="px-10">
+            <div v-for="post in postStore.getPosts" :key="post.id" class="min-h-screen bg-green-200">
                 {{ post.title }}
             </div>
-
-            <button @click="fetchPosts">Fetch More Posts</button>
-            <div v-if="isLoading" class="loading">Loading more posts...</div>
+            <button ref="loadMoreTrigger"></button>
+            <LoadingDots v-if="isLoading" />
         </div>
     </div>
 </template>
 
 <script>
 import { usePostStore } from '#imports';
+import LoadingDots from '~/components/ui/LoadingDots.vue';
 
 export default {
     name: "Blog",
+    components: {
+        LoadingDots
+    },
     setup() {
         useHead({
             title: 'Portfolio - Blog Entries',
@@ -33,17 +36,39 @@ export default {
             postStore: usePostStore(),
             pageNumber: 1,
             isLoading: false,
+            theObserver: null,
         }
     },
-    async mounted() {
-        await this.postStore.fetchPosts(this.pageNumber);
+    mounted() {
+        this.setupObserver();
+    },
+    unmounted() {
+        this.removeObserver();
+
     },
     methods: {
         async fetchPosts() {
             this.isLoading = true
-            await this.postStore.fetchPosts(++this.pageNumber)
+            await this.postStore.fetchPosts(this.pageNumber++)
             this.isLoading = false
         },
+        setupObserver() {
+            const trigger = this.$refs.loadMoreTrigger
+            this.theObserver = new IntersectionObserver((entries) => {
+                const [entry] = entries
+                if (entry.isIntersecting) {
+                    this.fetchPosts()
+                }
+            });
+            if (trigger) {
+                this.theObserver.observe(trigger);
+            }
+        },
+        removeObserver() {
+            if (this.observer && this.$refs.loadMoreTrigger) {
+                this.observer.unobserve(this.$refs.loadMoreTrigger)
+            }
+        }
     }
 };
 </script>
