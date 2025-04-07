@@ -16,7 +16,7 @@
             <IconGitlab />
         </SocialLink>
 
-        <SocialLink href="https://linkedin.com/in/doobie-droid" label="LinkedIn">
+        <SocialLink href="https://www.linkedin.com/in/leslie-douglas-074a6112a/" label="LinkedIn">
             <IconLinkedin />
         </SocialLink>
     </div>

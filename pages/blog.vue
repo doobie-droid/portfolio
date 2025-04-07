@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen">
-        <div class="px-10  ">
+        <div class="px-0 lg:px-10  ">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4">
                 <div v-for="post in postStore.getPosts" :key="post.id"
                     class="flex flex-col items-center bg-gray-200 dark:bg-neutral-800  rounded-xl p-3">
