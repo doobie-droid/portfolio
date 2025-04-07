@@ -1,7 +1,6 @@
 <template>
-    <div>
-        <div class="min-h-screen flex items-center justify-center">Index Page</div>
-        <div class="min-h-screen flex items-center justify-center">Center</div>
+    <div class="min-h-screen">
+        Redirecting...
     </div>
 
 </template>
