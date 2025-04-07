@@ -1,4 +1,9 @@
 <template>
+    <!-- TODO -->
+    <!-- Create a pretty pop-up For the contact form -->
+    <!-- Show that the contact form is loading when someone contacts you -->
+    <!-- Put moving eyes on your picture on the homepage and use three.js rendering-->
+
     <div class=" bg-gray-100 dark:bg-black min-h-screen flex justify-center ">
         <Overlay :isHidden="isHidden">
             <MobileMenu :isHidden="isHidden" @close="isHidden = true" :links="navLinks" @toggle="toggleMenu" />
