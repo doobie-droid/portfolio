@@ -66,7 +66,7 @@ export default {
             navLinks: [
                 { label: 'About', to: '/about' },
                 { label: 'Projects', to: '/project' },
-                { label: 'Open Source', to: '/open-source' },
+                // { label: 'Open Source', to: '/open-source' },
                 { label: 'Blog', to: '/blog' },
             ],
         };
