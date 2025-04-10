@@ -13,7 +13,7 @@
             </button>
         </div>
         <div class="font-mono dark:text-white">Page <em class="text-primary dark:text-yellow-400">{{ pageNumber
-        }}</em> of 2</div>
+                }}</em> of 2</div>
     </div>
 </template>
 
@@ -65,10 +65,10 @@ export default {
         },
         getValidScale() {
             this.viewportWidth = window.innerWidth
-            //scale looks best at a minimum of 0.8 and a max of 1.5 through trial and error
+            //scale looks best at a minimum of 0.7 and a max of 1.5 through trial and error
             const scale = Math.min(
                 1.5,
-                Math.max(0.8, parseFloat((this.viewportWidth / 1000).toFixed(1)))
+                Math.max(0.7, parseFloat((this.viewportWidth / 1000).toFixed(1)))
             )
             return scale
         },
