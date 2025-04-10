@@ -33,6 +33,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBase: process.env.API_URL || "http://localhost:9000",
+      baseURL: process.env.BASE_URL || "http://localhost:3000",
     },
   },
 });
