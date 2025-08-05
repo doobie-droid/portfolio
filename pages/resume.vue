@@ -13,7 +13,7 @@
             </button>
         </div>
         <div class="font-mono dark:text-white">Page <em class="text-primary dark:text-yellow-400">{{ pageNumber
-                }}</em> of 2</div>
+                }}</em> of 3</div>
     </div>
 </template>
 
@@ -52,7 +52,7 @@ export default {
     },
     methods: {
         nextPage() {
-            if (this.pageNumber < 2) {
+            if (this.pageNumber < 3) {
                 this.pageNumber++
             }
             this.loadPdf()
