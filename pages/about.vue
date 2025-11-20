@@ -12,12 +12,6 @@
             I am an active open source contributor within the <span class="text-primary dark:text-yellow-400">PHP
                 & Laravel</span> and the <span class="text-primary dark:text-yellow-400">Golang </span>Community.
             <br><br>
-            I am currently bootstrapping a startup called <a href="https://leisuretrove.com/" target="_blank"
-                class="link">Leisure
-                Trove.</a> Our
-            solution makes it easy for
-            people to share
-            and connect over shared experiences.
         </p>
         <h2>Experience</h2>
         <div class="px-24">

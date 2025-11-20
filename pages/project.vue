@@ -36,10 +36,15 @@ export default {
                 {
                     name: 'Leisure Trove',
                     link: 'https://leisuretrove.com/',
-                    bio: `LeisureTrove is your go-to platform for discovering unique experiences and unforgettable moments
-                right in your city — or anywhere in the world. Whether you're looking for the best spots to hang out
-                in Paris, exciting adventures in Lagos, or vacation ideas for your next getaway, we've got you covered.`,
-                    techStack: 'PHP/Laravel, Nuxt, GinGonic, MySQL'
+                    bio: `LeisureTrove is a discovery platform that helps users find curated hangout spots, local experiences, and memorable activities in any city. I built both the backend and frontend, implementing OAuth authentication, Google Maps integrations, CAPTCHA verification, and FCM push notifications. I also developed the real-time infrastructure using a Go-based WebSocket server, containerized the system with Docker, orchestrated deployments with Kubernetes for autoscaling, and documented all APIs using Swagger.`,
+                    techStack: 'PHP/Laravel, Nuxt, Go/GinGonic, MySQL'
+                },
+                {
+                    name: 'TryFaru',
+                    link: 'https://www.tryfaru.com/',
+                    bio: `TryFaru is an event contract trading platform—similar to Kalshi—where users can buy and sell
+                    contracts based on real-world events. This was a contract project for a client, where I designed the entire platform and built both the frontend and backend from scratch. I implemented robust testing with PHPUnit, full API documentation with Swagger, real-time features using Laravel Reverb WebSockets, and used Telescope for debugging and Horizon for managing queues.`,
+                    techStack: 'Nuxt3, Laravel 9, TailwindCSS'
                 },
                 {
                     name: 'Job Scraper',

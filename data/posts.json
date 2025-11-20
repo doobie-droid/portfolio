@@ -3,56 +3,56 @@
         "title": "How to set up Mailpit on Ubuntu wsl",
         "summary": "After six hours of head-scratching, trial, and error, I finally got Mailpit working as a local SMTP server, and I’m here to save you the pain. In this quick-start guide, I break down exactly how to install Mailpit, configure it with Laravel, and send test emails like a boss. ",
         "link": "https://medium.com/@doobie-droid/how-to-set-up-mailpit-on-ubuntu-wsl-541778d13fd1",
-        "view_count": 3600,
-        "read_count": 2000,
+        "view_count": 3800,
+        "read_count": 2100,
         "cover_image": "https://miro.medium.com/v2/resize:fit:750/format:webp/1*3AMPC71erbLE5rDpzwdZug.png"
     },
     {
         "title": "How to install MySQL 5.7 on ubuntu 20.04 or later",
         "summary": "This guide walks you through installing MySQL 5.7 on Ubuntu, perfect for developers who prefer it over newer versions like 8.0. It covers updating system packages, downloading the MySQL APT config package, and selecting MySQL 5.7 during setup. It also addresses common issues like missing GPG keys and repository update failures, offering secure and fallback solutions. ",
         "link": "https://medium.com/@doobie-droid/how-to-install-mysql-5-0-on-ubuntu-20-04-or-later-4d27de464eef",
-        "view_count": 12000,
-        "read_count": 8500,
+        "view_count": 12800,
+        "read_count": 9000,
         "cover_image": "https://miro.medium.com/v2/resize:fit:750/format:webp/1*bCYJvD0hj9Uo_CCbX09Skw.png"
     },
     {
         "title": "How to setup locally hosted s3 bucket for Laravel on Ubuntu Wsl",
         "summary": "If you can’t access AWS or DigitalOcean due to payment restrictions or just need a free testing environment, this guide helps you set up a local S3 bucket using LocalStack. It walks through installing Docker, Python 3, AWS CLI, awslocal, and LocalStack CLI. The guide notes that the free LocalStack tier doesn’t support object persistence—data is lost on container restart. ",
         "link": "https://medium.com/@doobie-droid/how-to-setup-locally-hosted-s3-bucket-for-laravel-on-ubuntu-wsl-3749d9ce9e36",
-        "view_count": 266,
-        "read_count": 108,
+        "view_count": 309,
+        "read_count": 126,
         "cover_image": "https://miro.medium.com/v2/resize:fit:750/format:webp/1*aF-mDdY2VQeDNSxhMNJP7A.jpeg"
     },
     {
         "title": "How does int casting work ?",
         "summary": "This article demystifies how integer casting works in statically typed languages like Go, Rust, and C#. It explores how numbers are stored in binary, how signed and unsigned integers are represented using bit lengths (8, 16, 32, 64-bit), and how negative numbers use two’s complement. It explains casting between types, covering safe expansion (e.g., int8 to int16) and risky narrowing (e.g., int16 to int8), which can cause data loss",
         "link": "https://medium.com/@doobie-droid/how-does-int-casting-work-e5944cdb373f",
-        "view_count": 23,
-        "read_count": 9,
+        "view_count": 27,
+        "read_count": 10,
         "cover_image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*CoxtnS1Yu4g6xqyCBFa7kQ.png"
     },
     {
         "title": "Advent of Code Day 12 Solution: 2024",
         "summary": "This post details my Golang solution to Day 12 of Advent of Code. The challenge involves parsing a grid of labeled plots, identifying their perimeters, grouping them into distinct regions, and calculating a final price based on shared or distinct sides.",
         "link": "https://medium.com/@doobie-droid/advent-of-code-day-12-solution-2024-48c096732858",
-        "view_count": 22,
-        "read_count": 13,
+        "view_count": 42,
+        "read_count": 23,
         "cover_image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*paArd68QNadSQdApYZ50FA.jpeg"
     },
     {
         "title": "From Rejection to Reflection: What flunking my Cowrywise assessment taught me",
         "summary": "I was laid off in January 2025 and thought getting a new job would be a walk in the park. Spoiler: it wasn’t. After dozens of rejections, I applied, out of desperation, for a frontend role at Cowrywise, despite being a backend dev. I built the assessment, submitted it, and waited. What happened next?",
         "link": "https://medium.com/@doobie-droid/from-rejection-to-reflection-what-flunking-my-cowrywise-assessment-taught-me-2a477babb984",
-        "view_count": 18,
-        "read_count": 8,
+        "view_count": 33,
+        "read_count": 18,
         "cover_image": "https://miro.medium.com/v2/resize:fit:640/format:webp/0*4HzxV5Dn756nSdyz"
     },
     {
         "title": "How to create the masonry grid in Nuxt 3 without any external dependencies",
         "summary": "After a recent frontend interview where I had to build an Unsplash clone, I struggled a bit with implementing a proper masonry grid, even with help from our AI overlords 😅. That experience inspired me to write this guide, especially since getting the layout right took more effort than I expected.",
         "link": "https://medium.com/@doobie-droid/how-to-create-the-masonry-grid-in-nuxt-3-without-any-external-dependencies-772b770ceaee",
-        "view_count": 217,
-        "read_count": 117,
+        "view_count": 350,
+        "read_count": 180,
         "cover_image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*psuMPGaq3eSNVmlS5UJ_kA.png"
     }
 ]
