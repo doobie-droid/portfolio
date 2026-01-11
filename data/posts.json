@@ -1,4 +1,11 @@
-[
+[ {
+        "title": "Improve your PHP code quality: How to set up PHP CS FIXER",
+        "summary": "The article explains how PHP CS Fixer enforces consistent PHP coding standards to improve readability, collaboration, maintainability, and onboarding while reducing style-related bugs and review friction. It provides practical, safe configurations (including PSR-12), shows how to apply fixes locally or in CI/CD, and recommends clean workflows such as cleanup commits or automated guardrails.",
+        "link": "https://medium.com/@doobie-droid/improve-your-php-code-quality-how-to-set-up-php-cs-fixer-c60cd0f82623",
+        "view_count": 600,
+        "read_count": 400,
+        "cover_image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*RzxAbXUzhiE1MErVQ8ZyEw.png"
+    },
     {
         "title": "Fix Laravel Database Performance: Replace UUIDv4 with Ordered UUIDs",
         "summary": "After seeing too many Laravel apps slow to a crawl at scale, I discovered the silent culprit: random UUIDs as primary keys. Let me show you why ordered UUIDs are the fix and how to implement them painlessly.",

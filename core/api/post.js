@@ -1,6 +1,6 @@
 export default ($Axios) => ({
   async fetchPosts(pageNumber = 1) {
-    const delay = Math.floor(Math.random() * 4000) + 1000;
+    const delay = Math.floor(Math.random() * 1000) + 1000;
     await new Promise((resolve) => setTimeout(resolve, delay));
     const data = await import("~/data/posts.json");
     const allPosts = data.default;
