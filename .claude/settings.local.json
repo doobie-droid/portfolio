@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio/public/images/projects\")",
+      "Read(///wsl.localhost/ubuntu-20.04/home/doobie-droid/**)",
+      "Bash(yarn build *)",
+      "Bash(cd \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio\" && ls node_modules/.bin | grep -i nuxt)",
+      "Bash(node_modules/.bin/nuxt build *)",
+      "Bash(node ./node_modules/nuxt/bin/nuxt.mjs build)",
+      "Bash(node -e \"console.log\\(require.resolve\\('@nuxt/kit', {paths:[process.cwd\\(\\)]}\\)\\)\")",
+      "Bash(wsl.exe -l -v)",
+      "Bash(wsl.exe -d Ubuntu-20.04 -- bash -lc \"cd /home/doobie-droid/portfolio && \\(yarn build 2>&1 || npx nuxt build 2>&1\\) | tail -150\")",
+      "PowerShell(nvm list)",
+      "PowerShell(nvm use 18)",
+      "PowerShell(node -v)",
+      "PowerShell(yarn -v)"
+    ]
+  }
+}

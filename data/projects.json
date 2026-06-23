@@ -1,0 +1,98 @@
+[
+  {
+    "id": "leisure-trove",
+    "name": "Leisure Trove",
+    "summary": "A discovery platform that helps users find curated hangout spots, local experiences, and memorable activities in any city.",
+    "bio": "LeisureTrove is a discovery platform that helps users find curated hangout spots, local experiences, and memorable activities in any city. I built both the backend and frontend, implementing OAuth authentication, Google Maps integrations, CAPTCHA verification, and FCM push notifications. I also developed the real-time infrastructure using a Go-based WebSocket server, containerized the system with Docker, orchestrated deployments with Kubernetes for autoscaling, and documented all APIs using Swagger.",
+    "techStack": ["PHP/Laravel", "Nuxt", "Go/GinGonic", "MySQL"],
+    "liveUrl": "https://leisuretrove.com/",
+    "codeUrl": null,
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": true
+  },
+  {
+    "id": "tryfaru",
+    "name": "TryFaru",
+    "summary": "An event contract trading platform—similar to Kalshi—where users can buy and sell contracts based on real-world events.",
+    "bio": "TryFaru is an event contract trading platform—similar to Kalshi—where users can buy and sell contracts based on real-world events. This was a contract project for a client, where I designed the entire platform and built both the frontend and backend from scratch. I implemented robust testing with PHPUnit, full API documentation with Swagger, real-time features using Laravel Reverb WebSockets, and used Telescope for debugging and Horizon for managing queues.",
+    "techStack": ["Nuxt3", "Laravel 9", "TailwindCSS"],
+    "liveUrl": "https://www.tryfaru.com/",
+    "codeUrl": null,
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": true
+  },
+  {
+    "id": "job-scraper",
+    "name": "Job Scraper",
+    "summary": "A robust automation tool built to collect job listings from some of the most popular career platforms on the web.",
+    "bio": "Job Scraper is a robust automation tool built to collect job listings from some of the most popular career platforms on the web. It combines web scraping and REST APIs to fetch jobs based on customizable keyword searches — all centralized in one streamlined system. Whether you're sourcing remote developer gigs or scouting across mainstream job boards, Job Scraper delivers relevant listings from across the internet. Currently, it supports data aggregation from platforms like LinkedIn, TestGorilla, Workable, RemoteAfrica, GolangProjects, and BreezyHR — giving you access to a broad and diverse range of job opportunities.",
+    "techStack": ["Golang"],
+    "liveUrl": null,
+    "codeUrl": "https://github.com/doobie-droid/job_scraper",
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": true
+  },
+  {
+    "id": "flok-node",
+    "name": "Flok Node – NFT Minting & Transaction Server",
+    "summary": "A backend server built to handle minting and purchasing NFTs through a streamlined Ethereum-based flow.",
+    "bio": "Flok Node is a backend server built to handle minting and purchasing NFTs through a streamlined Ethereum-based flow. It serves as the core infrastructure for signing, deploying, and interacting with smart contracts, and it supports both local and testnet environments. Designed with developer flexibility and blockchain scalability in mind, the server integrates Ethereum smart contract deployment using Hardhat, wallet key management via .env configurations, and a Kafka-driven event system powered by Node.js and Docker. Whether you're minting new assets or interacting with token marketplaces, Flok Node simplifies the process by providing pre-built commands, structured response formats, and real-time consumer handling.",
+    "techStack": ["Javascript", "Solidity", "Kafka", "Docker"],
+    "liveUrl": null,
+    "codeUrl": "https://github.com/doobie-droid/Tryflok-nodeserver",
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": false
+  },
+  {
+    "id": "unsplash-clone",
+    "name": "Unsplash Clone",
+    "summary": "A lightweight Unsplash clone that utilizes the Unsplash API to display and search for high-quality images.",
+    "bio": "This project is a lightweight Unsplash clone that utilizes the Unsplash API to display and search for high-quality images. It features a responsive masonry-grid layout built entirely WITHOUT external dependencies — delivering a smooth and modern user experience with minimal overhead.",
+    "techStack": ["Javascript", "Github Actions", "SCSS", "Nuxt3"],
+    "liveUrl": "https://doobie-droid.github.io/unsplash-clone/",
+    "codeUrl": null,
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": false
+  },
+  {
+    "id": "product-management-app",
+    "name": "Product Management App",
+    "summary": "A technical assessment for Pay4Me.app, focused on building a fully functional CRUD application using the Filament admin panel.",
+    "bio": "This project is a technical assessment for Pay4Me.app, focused on building a fully functional CRUD application using the Filament admin panel. It includes foundational unit tests to ensure reliability and maintainability, along with auto-generated API documentation powered by Laravel Scribe. The project highlights clean architecture, usability, and developer-friendly tooling in a Laravel environment.",
+    "techStack": ["Laravel", "FilamentPHP", "Laravel Scribe", "PHPUnit"],
+    "liveUrl": "https://pay4me.laravel.cloud/docs",
+    "codeUrl": null,
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": false
+  },
+  {
+    "id": "appointment-management-app",
+    "name": "Appointment Management App",
+    "summary": "A backend technical assessment for Clafiya, built to handle appointment booking functionality for patients.",
+    "bio": "This project is a backend technical assessment for Clafiya, built to handle appointment booking functionality for patients. It provides a clean and efficient API system for scheduling, managing, and storing patient appointments. Developed with Laravel, the system leverages Docker for consistent local development and testing environments.",
+    "techStack": ["Laravel", "Docker", "Flutterwave API", "PHPUnit"],
+    "liveUrl": null,
+    "codeUrl": "https://github.com/doobie-droid/hospital-backend",
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": false
+  },
+  {
+    "id": "shopify-onboarding-clone",
+    "name": "Shopify Onboarding Page Clone",
+    "summary": "A responsive, ARIA-accessible user onboarding page for Shopify, built entirely with vanilla JavaScript and CSS.",
+    "bio": "This project is a responsive, ARIA-accessible user onboarding page for Shopify, built entirely with vanilla JavaScript and CSS. It focuses on clean UI/UX design, keyboard navigation support, and accessibility best practices to ensure an inclusive experience for all users. Submitted as part of the LevelUp UI Hackathon, the project demonstrates how to deliver high-quality user flows without relying on external frameworks.",
+    "techStack": ["Javascript", "CSS", "HTML", "Accessibility"],
+    "liveUrl": "https://shopify-hackathon-sigma.vercel.app/",
+    "codeUrl": null,
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": false
+  }
+]
