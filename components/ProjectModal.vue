@@ -1,10 +1,10 @@
 <template>
     <Teleport to="body">
         <div v-if="open" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop"
-            @click="close" @keydown.esc="close">
+            :class="{ 'is-instant': skipOpenAnimation }" @click="close" @keydown.esc="close">
             <div ref="panel" role="dialog" aria-modal="true" :aria-labelledby="titleId" tabindex="-1"
                 class="modal-panel relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-neutral-900 rounded-xl p-6 md:p-8 shadow-2xl"
-                @click.stop @keydown="onPanelKeydown">
+                :class="{ 'is-instant': skipOpenAnimation }" @click.stop @keydown="onPanelKeydown">
 
                 <button ref="closeButton" type="button" @click="close" aria-label="Close project details"
                     class="absolute top-4 right-4 w-9 h-9 rounded-full flex items-center justify-center border border-primary dark:border-yellow-400 text-primary dark:text-yellow-400 hover:bg-primary hover:text-white dark:hover:bg-yellow-400 dark:hover:text-black transition">
@@ -25,7 +25,8 @@
                 <div v-if="project.features && project.features.length" class="mt-4">
                     <h4 class="font-mono font-bold text-black dark:text-white mb-2">Key Features</h4>
                     <ul class="list-disc pl-5 space-y-1">
-                        <li v-for="feature in project.features" :key="feature" class="text-base">{{ feature }}</li>
+                        <li v-for="feature in project.features" :key="feature"
+                            class="text-base text-zinc-700 dark:text-zinc-300">{{ feature }}</li>
                     </ul>
                 </div>
 
@@ -74,6 +75,10 @@ export default {
         project: {
             type: Object,
             required: true,
+        },
+        skipOpenAnimation: {
+            type: Boolean,
+            default: false,
         },
     },
     emits: ['close'],
@@ -149,6 +154,46 @@ export default {
 
 .modal-panel {
     animation: pop-in 0.25s ease-out;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Used when a card has just morphed into the modal — a quick settle instead of a full pop-in/fade-in,
+   so the hand-off from the morph overlay doesn't read as a hard cut or a repeated entrance. */
+.modal-backdrop.is-instant {
+    animation: fade-in-fast 0.15s ease-out;
+}
+
+.modal-panel.is-instant {
+    animation: settle-in 0.15s ease-out;
+}
+
+@keyframes fade-in-fast {
+    from {
+        opacity: 0.6;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes settle-in {
+    from {
+        opacity: 0.85;
+        transform: scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-panel::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 @keyframes fade-in {
@@ -176,7 +221,9 @@ export default {
 @media (prefers-reduced-motion: reduce) {
 
     .modal-backdrop,
-    .modal-panel {
+    .modal-panel,
+    .modal-backdrop.is-instant,
+    .modal-panel.is-instant {
         animation: none;
     }
 }

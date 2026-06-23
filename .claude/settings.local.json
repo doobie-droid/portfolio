@@ -14,7 +14,12 @@
       "PowerShell(nvm use 18)",
       "PowerShell(node -v)",
       "PowerShell(yarn -v)",
-      "Bash(cd \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio\" && grep -rn \"messageStore\\\\|EmailInput\\\\|NameInput\\\\|TextAreaInput\\\\|SubmitButton\" --include=\"*.vue\" --include=\"*.js\" . | grep -v node_modules)"
+      "Bash(cd \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio\" && grep -rn \"messageStore\\\\|EmailInput\\\\|NameInput\\\\|TextAreaInput\\\\|SubmitButton\" --include=\"*.vue\" --include=\"*.js\" . | grep -v node_modules)",
+      "Bash(xargs -I{} sh -c 'echo {}; wc -l {}')",
+      "Bash(cd \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio\" && cat node_modules/tailwindcss/package.json | grep '\"version\"'; grep -n \"perspective\" .output/public/_nuxt/projects.BHCC4_zp.css; echo \"---file---\"; cat .output/public/_nuxt/projects.BHCC4_zp.css)",
+      "Bash(grep -rl \"rounded-xl\\\\|bg-gray-100\" .output)",
+      "Bash(grep -rl \"perspective\" .output)",
+      "Bash(cd \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio\" && grep -o '\\\\.\\\\\\\\?\\\\[perspective[^}]*}' .output/server/chunks/build/entry-styles.gwmBJwiU.mjs | head -5; echo \"---broader---\"; grep -o '[^\"]*perspective[^\"]*' .output/server/chunks/build/entry-styles.gwmBJwiU.mjs | head -5)"
     ]
   }
 }
