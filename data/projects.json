@@ -5,6 +5,12 @@
     "summary": "A discovery platform that helps users find curated hangout spots, local experiences, and memorable activities in any city.",
     "bio": "LeisureTrove is a discovery platform that helps users find curated hangout spots, local experiences, and memorable activities in any city. I built both the backend and frontend, implementing OAuth authentication, Google Maps integrations, CAPTCHA verification, and FCM push notifications. I also developed the real-time infrastructure using a Go-based WebSocket server, containerized the system with Docker, orchestrated deployments with Kubernetes for autoscaling, and documented all APIs using Swagger.",
     "techStack": ["PHP/Laravel", "Nuxt", "Go/GinGonic", "MySQL"],
+    "features": [
+      "OAuth authentication, Google Maps integration, and CAPTCHA verification",
+      "Real-time infrastructure powered by a Go-based WebSocket server",
+      "Dockerized services orchestrated with Kubernetes for autoscaling",
+      "FCM push notifications and fully documented APIs via Swagger"
+    ],
     "liveUrl": "https://leisuretrove.com/",
     "codeUrl": null,
     "demoVideoUrl": null,
@@ -17,6 +23,12 @@
     "summary": "An event contract trading platform—similar to Kalshi—where users can buy and sell contracts based on real-world events.",
     "bio": "TryFaru is an event contract trading platform—similar to Kalshi—where users can buy and sell contracts based on real-world events. This was a contract project for a client, where I designed the entire platform and built both the frontend and backend from scratch. I implemented robust testing with PHPUnit, full API documentation with Swagger, real-time features using Laravel Reverb WebSockets, and used Telescope for debugging and Horizon for managing queues.",
     "techStack": ["Nuxt3", "Laravel 9", "TailwindCSS"],
+    "features": [
+      "End-to-end platform design, from frontend to backend architecture",
+      "Real-time contract updates via Laravel Reverb WebSockets",
+      "Robust test coverage with PHPUnit and full API docs via Swagger",
+      "Queue management with Horizon and debugging via Telescope"
+    ],
     "liveUrl": "https://www.tryfaru.com/",
     "codeUrl": null,
     "demoVideoUrl": null,
@@ -29,6 +41,12 @@
     "summary": "A robust automation tool built to collect job listings from some of the most popular career platforms on the web.",
     "bio": "Job Scraper is a robust automation tool built to collect job listings from some of the most popular career platforms on the web. It combines web scraping and REST APIs to fetch jobs based on customizable keyword searches — all centralized in one streamlined system. Whether you're sourcing remote developer gigs or scouting across mainstream job boards, Job Scraper delivers relevant listings from across the internet. Currently, it supports data aggregation from platforms like LinkedIn, TestGorilla, Workable, RemoteAfrica, GolangProjects, and BreezyHR — giving you access to a broad and diverse range of job opportunities.",
     "techStack": ["Golang"],
+    "features": [
+      "Combines web scraping and REST APIs into one streamlined pipeline",
+      "Customizable keyword search across multiple job boards",
+      "Aggregates listings from LinkedIn, Workable, BreezyHR, and more",
+      "Centralized output for both remote and mainstream job searches"
+    ],
     "liveUrl": null,
     "codeUrl": "https://github.com/doobie-droid/job_scraper",
     "demoVideoUrl": null,
@@ -41,6 +59,12 @@
     "summary": "A backend server built to handle minting and purchasing NFTs through a streamlined Ethereum-based flow.",
     "bio": "Flok Node is a backend server built to handle minting and purchasing NFTs through a streamlined Ethereum-based flow. It serves as the core infrastructure for signing, deploying, and interacting with smart contracts, and it supports both local and testnet environments. Designed with developer flexibility and blockchain scalability in mind, the server integrates Ethereum smart contract deployment using Hardhat, wallet key management via .env configurations, and a Kafka-driven event system powered by Node.js and Docker. Whether you're minting new assets or interacting with token marketplaces, Flok Node simplifies the process by providing pre-built commands, structured response formats, and real-time consumer handling.",
     "techStack": ["Javascript", "Solidity", "Kafka", "Docker"],
+    "features": [
+      "Ethereum smart contract deployment and signing via Hardhat",
+      "Kafka-driven event system for real-time consumer handling",
+      "Supports both local and testnet blockchain environments",
+      "Dockerized Node.js infrastructure with structured response formats"
+    ],
     "liveUrl": null,
     "codeUrl": "https://github.com/doobie-droid/Tryflok-nodeserver",
     "demoVideoUrl": null,
@@ -53,6 +77,12 @@
     "summary": "A lightweight Unsplash clone that utilizes the Unsplash API to display and search for high-quality images.",
     "bio": "This project is a lightweight Unsplash clone that utilizes the Unsplash API to display and search for high-quality images. It features a responsive masonry-grid layout built entirely WITHOUT external dependencies — delivering a smooth and modern user experience with minimal overhead.",
     "techStack": ["Javascript", "Github Actions", "SCSS", "Nuxt3"],
+    "features": [
+      "Responsive masonry-grid layout built with zero external dependencies",
+      "Image search and discovery powered by the Unsplash API",
+      "Continuous deployment via GitHub Actions",
+      "Minimal-overhead, smooth user experience"
+    ],
     "liveUrl": "https://doobie-droid.github.io/unsplash-clone/",
     "codeUrl": null,
     "demoVideoUrl": null,
@@ -65,6 +95,12 @@
     "summary": "A technical assessment for Pay4Me.app, focused on building a fully functional CRUD application using the Filament admin panel.",
     "bio": "This project is a technical assessment for Pay4Me.app, focused on building a fully functional CRUD application using the Filament admin panel. It includes foundational unit tests to ensure reliability and maintainability, along with auto-generated API documentation powered by Laravel Scribe. The project highlights clean architecture, usability, and developer-friendly tooling in a Laravel environment.",
     "techStack": ["Laravel", "FilamentPHP", "Laravel Scribe", "PHPUnit"],
+    "features": [
+      "Fully functional CRUD application built on the Filament admin panel",
+      "Foundational unit test coverage with PHPUnit",
+      "Auto-generated API documentation via Laravel Scribe",
+      "Clean, maintainable Laravel architecture"
+    ],
     "liveUrl": "https://pay4me.laravel.cloud/docs",
     "codeUrl": null,
     "demoVideoUrl": null,
@@ -77,6 +113,12 @@
     "summary": "A backend technical assessment for Clafiya, built to handle appointment booking functionality for patients.",
     "bio": "This project is a backend technical assessment for Clafiya, built to handle appointment booking functionality for patients. It provides a clean and efficient API system for scheduling, managing, and storing patient appointments. Developed with Laravel, the system leverages Docker for consistent local development and testing environments.",
     "techStack": ["Laravel", "Docker", "Flutterwave API", "PHPUnit"],
+    "features": [
+      "Clean, efficient API for scheduling and managing patient appointments",
+      "Payment integration via the Flutterwave API",
+      "Dockerized local development and testing environments",
+      "Test coverage with PHPUnit"
+    ],
     "liveUrl": null,
     "codeUrl": "https://github.com/doobie-droid/hospital-backend",
     "demoVideoUrl": null,
@@ -89,6 +131,12 @@
     "summary": "A responsive, ARIA-accessible user onboarding page for Shopify, built entirely with vanilla JavaScript and CSS.",
     "bio": "This project is a responsive, ARIA-accessible user onboarding page for Shopify, built entirely with vanilla JavaScript and CSS. It focuses on clean UI/UX design, keyboard navigation support, and accessibility best practices to ensure an inclusive experience for all users. Submitted as part of the LevelUp UI Hackathon, the project demonstrates how to deliver high-quality user flows without relying on external frameworks.",
     "techStack": ["Javascript", "CSS", "HTML", "Accessibility"],
+    "features": [
+      "ARIA-accessible markup with full keyboard navigation support",
+      "Built entirely in vanilla JavaScript and CSS, no frameworks",
+      "Responsive, clean UI/UX onboarding flow",
+      "Submitted as part of the LevelUp UI Hackathon"
+    ],
     "liveUrl": "https://shopify-hackathon-sigma.vercel.app/",
     "codeUrl": null,
     "demoVideoUrl": null,

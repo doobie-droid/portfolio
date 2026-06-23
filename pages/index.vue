@@ -35,7 +35,7 @@
         <!-- Featured projects -->
         <section class="max-w-5xl mx-auto w-full">
             <h2 class="text-center">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 [perspective:1200px]">
                 <ProjectCard v-for="project in featuredProjects" :key="project.id" :project="project" />
             </div>
             <div class="text-center mt-8">

@@ -13,7 +13,8 @@
       "PowerShell(nvm list)",
       "PowerShell(nvm use 18)",
       "PowerShell(node -v)",
-      "PowerShell(yarn -v)"
+      "PowerShell(yarn -v)",
+      "Bash(cd \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio\" && grep -rn \"messageStore\\\\|EmailInput\\\\|NameInput\\\\|TextAreaInput\\\\|SubmitButton\" --include=\"*.vue\" --include=\"*.js\" . | grep -v node_modules)"
     ]
   }
 }

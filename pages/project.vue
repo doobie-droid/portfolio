@@ -5,7 +5,7 @@
             A selection of products, tools, and contract work I've designed and built end-to-end.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 [perspective:1200px]">
             <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
         </div>
     </div>
