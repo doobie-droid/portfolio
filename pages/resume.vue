@@ -20,13 +20,11 @@
 <script>
 import LeftArrow from '~/components/icons/LeftArrow.vue';
 import RightArrow from '~/components/icons/RightArrow.vue';
-import CertificationList from '~/components/CertificationList.vue';
 export default {
     name: "Open Source",
     components: {
         LeftArrow,
         RightArrow,
-        CertificationList
     },
     data() {
         return {
