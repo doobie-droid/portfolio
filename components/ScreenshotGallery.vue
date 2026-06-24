@@ -2,7 +2,7 @@
     <div class="grid gap-2" :class="gridColsClass">
         <img v-for="(src, index) in displayShots" :key="index" :src="src" loading="lazy"
             :alt="`${projectName} screenshot ${index + 1}`"
-            class="w-full h-48 object-cover rounded-lg border border-zinc-200 dark:border-zinc-700" />
+            class="w-full h-48 object-cover rounded-lg border-2 border-gray-300 shadow-sm dark:border dark:border-zinc-700 dark:shadow-none" />
     </div>
 </template>
 
