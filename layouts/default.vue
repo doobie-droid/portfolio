@@ -69,8 +69,8 @@ export default {
         return {
             isHidden: true,
             navLinks: [
-                { label: 'About', to: '/about' },
                 { label: 'Projects', to: '/project' },
+                { label: 'About', to: '/about' },
                 { label: 'Resume', to: '/resume' },
                 // { label: 'Open Source', to: '/open-source' },
                 { label: 'Blog', to: '/blog' },
