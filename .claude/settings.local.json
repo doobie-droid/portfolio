@@ -40,7 +40,9 @@
       "Bash(cp /c/Users/lesli/Downloads/leisuretrove-home.jpg \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio/public/images/projects/leisuretrove/home.jpg\")",
       "Bash(cp /c/Users/lesli/Downloads/leisuretrove-discover.jpg \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio/public/images/projects/leisuretrove/discover.jpg\")",
       "Bash(cp /c/Users/lesli/Downloads/leisuretrove-search.jpg \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio/public/images/projects/leisuretrove/search.jpg\")",
-      "Bash(cp /c/Users/lesli/Downloads/leisuretrove-event-details.jpg \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio/public/images/projects/leisuretrove/event-details.jpg\")"
+      "Bash(cp /c/Users/lesli/Downloads/leisuretrove-event-details.jpg \"//wsl.localhost/ubuntu-20.04/home/doobie-droid/portfolio/public/images/projects/leisuretrove/event-details.jpg\")",
+      "WebFetch(domain:apexinterviewer.com)",
+      "WebFetch(domain:digitalprocurement.africa)"
     ]
   }
 }

@@ -1,5 +1,44 @@
 [
   {
+    "id": "digital-procurement-africa",
+    "name": "Digital Procurement Africa",
+    "summary": "An event landing page and suite of internal tooling for an executive procurement summit aimed at African enterprise leaders.",
+    "bio": "Digital Procurement Africa is the landing page for an executive summit helping C-suite leaders at large African enterprises (CFOs, CPOs, supply chain directors) tackle procurement modernization and digital transformation. Alongside the public-facing event page, I built internal company-wide tooling to support the broader business. The site was built with Laravel/PHP, covering event registration and content delivery for the summit.",
+    "techStack": ["Laravel", "PHP"],
+    "features": [
+      "Event landing page covering summit agenda, speakers, and registration",
+      "Panel and workshop content covering procurement automation, governance, and cost recovery",
+      "Internal company-wide tooling built alongside the public event site"
+    ],
+    "liveUrl": "https://digitalprocurement.africa",
+    "codeUrl": null,
+    "demoVideoUrl": "/images/projects/digital_procurement_africa/demo.mp4",
+    "screenshots": [
+      "/images/projects/digital_procurement_africa/landing.png",
+      "/images/projects/digital_procurement_africa/detail.png"
+    ],
+    "featured": true
+  },
+  {
+    "id": "apex-interviewer",
+    "name": "Apex Interviewer",
+    "summary": "An AI-powered mock interview platform that helps software engineers prepare for technical interviews at top tech companies.",
+    "bio": "Apex Interviewer is an AI-powered platform that simulates realistic technical interviews using verified questions from Google, Meta, Amazon, and other top tech companies. I built the full-stack application, including the Next.js frontend and an AI-driven interview engine that evaluates coding, system design, and behavioral responses against each company's actual rubrics. The platform is backed by Supabase, providing auth, database, and real-time infrastructure out of the box, and includes a performance dashboard tracking candidates across 50+ coding patterns and 9 evaluation dimensions.",
+    "techStack": ["Next.js", "Supabase", "AI/LLM Integration", "TailwindCSS"],
+    "features": [
+      "AI-conducted mock interviews using company-specific rubrics and verified questions",
+      "572+ coding problems plus system design and behavioral question banks",
+      "Real-time, transcript-grounded feedback on every response",
+      "Performance dashboard tracking 50+ coding patterns and 9 evaluation dimensions",
+      "Starter code support in 6 programming languages with AI code review"
+    ],
+    "liveUrl": "https://apexinterviewer.com",
+    "codeUrl": null,
+    "demoVideoUrl": null,
+    "screenshots": [],
+    "featured": true
+  },
+  {
     "id": "leisure-trove",
     "name": "Leisure Trove",
     "summary": "A discovery platform that helps users find curated hangout spots, local experiences, and memorable activities in any city.",
@@ -57,7 +96,7 @@
     "codeUrl": "https://github.com/doobie-droid/job_scraper",
     "demoVideoUrl": null,
     "screenshots": [],
-    "featured": true
+    "featured": false
   },
   {
     "id": "flok-node",
