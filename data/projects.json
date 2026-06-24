@@ -34,8 +34,11 @@
     ],
     "liveUrl": "https://apexinterviewer.com",
     "codeUrl": null,
-    "demoVideoUrl": null,
-    "screenshots": [],
+    "demoVideoUrl": "/images/projects/apex_interviewer/demo.mp4",
+    "screenshots": [
+      "/images/projects/apex_interviewer/landing.png",
+      "/images/projects/apex_interviewer/detail.png"
+    ],
     "featured": true
   },
   {
