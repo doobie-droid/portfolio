@@ -1,7 +1,8 @@
 <template>
-    <div>
+    <div class="flex flex-col gap-3">
         <VideoEmbed v-if="demoVideoUrl" :src="demoVideoUrl" :projectName="projectName" />
-        <ScreenshotGallery v-else :screenshots="screenshots" :projectName="projectName" />
+        <ScreenshotGallery v-if="!demoVideoUrl || screenshots.length" :screenshots="screenshots"
+            :projectName="projectName" />
     </div>
 </template>
 

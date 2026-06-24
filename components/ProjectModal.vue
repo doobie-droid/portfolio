@@ -16,7 +16,7 @@
                 </h3>
 
                 <div class="mt-4">
-                    <ProjectMedia :screenshots="project.screenshots" :demoVideoUrl="project.demoVideoUrl"
+                    <ProjectMedia :screenshots="[]" :demoVideoUrl="project.demoVideoUrl"
                         :projectName="project.name" />
                 </div>
 

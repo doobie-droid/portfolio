@@ -13,8 +13,11 @@
     ],
     "liveUrl": "https://leisuretrove.com/",
     "codeUrl": null,
-    "demoVideoUrl": null,
-    "screenshots": [],
+    "demoVideoUrl": "/images/projects/leisuretrove/demo.mp4",
+    "screenshots": [
+      "/images/projects/leisuretrove/landing.png",
+      "/images/projects/leisuretrove/discover.png"
+    ],
     "featured": true
   },
   {
