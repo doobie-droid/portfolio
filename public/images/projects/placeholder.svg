@@ -1,8 +1,79 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
-  <rect width="640" height="360" fill="#e5e7eb"/>
-  <rect x="0.5" y="0.5" width="639" height="359" fill="none" stroke="#9ca3af" stroke-dasharray="6 6"/>
-  <g fill="#9ca3af" font-family="monospace" text-anchor="middle">
-    <text x="320" y="170" font-size="22" font-weight="bold">Screenshot coming soon</text>
-    <text x="320" y="200" font-size="14">Drop an image in /public/images/projects</text>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="rackGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#374151"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bgGrad)"/>
+
+  <!-- subtle grid backdrop -->
+  <g stroke="#334155" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="60" x2="640" y2="60"/>
+    <line x1="0" y1="120" x2="640" y2="120"/>
+    <line x1="0" y1="180" x2="640" y2="180"/>
+    <line x1="0" y1="240" x2="640" y2="240"/>
+    <line x1="0" y1="300" x2="640" y2="300"/>
   </g>
+
+  <!-- server rack -->
+  <g transform="translate(220, 70)">
+    <rect x="0" y="0" width="200" height="220" rx="10" fill="url(#rackGrad)" stroke="#475569" stroke-width="2"/>
+    <!-- rack units -->
+    <g>
+      <rect x="16" y="18" width="168" height="34" rx="4" fill="#111827" stroke="#4b5563"/>
+      <circle cx="32" cy="35" r="4" fill="#34d399"/>
+      <circle cx="46" cy="35" r="4" fill="#fbbf24"/>
+      <rect x="64" y="29" width="104" height="12" rx="2" fill="#334155"/>
+
+      <rect x="16" y="60" width="168" height="34" rx="4" fill="#111827" stroke="#4b5563"/>
+      <circle cx="32" cy="77" r="4" fill="#34d399"/>
+      <circle cx="46" cy="77" r="4" fill="#34d399"/>
+      <rect x="64" y="71" width="104" height="12" rx="2" fill="#334155"/>
+
+      <rect x="16" y="102" width="168" height="34" rx="4" fill="#111827" stroke="#4b5563"/>
+      <circle cx="32" cy="119" r="4" fill="#f87171"/>
+      <circle cx="46" cy="119" r="4" fill="#fbbf24"/>
+      <rect x="64" y="113" width="104" height="12" rx="2" fill="#334155"/>
+
+      <rect x="16" y="144" width="168" height="34" rx="4" fill="#111827" stroke="#4b5563"/>
+      <circle cx="32" cy="161" r="4" fill="#34d399"/>
+      <circle cx="46" cy="161" r="4" fill="#34d399"/>
+      <rect x="64" y="155" width="104" height="12" rx="2" fill="#334155"/>
+
+      <rect x="16" y="186" width="168" height="20" rx="4" fill="#111827" stroke="#4b5563"/>
+    </g>
+  </g>
+
+  <!-- connection lines / data flow -->
+  <g stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M220 130 C 150 130, 130 90, 80 90" stroke-dasharray="5 5"/>
+    <path d="M220 180 C 150 180, 130 260, 70 260" stroke-dasharray="5 5"/>
+    <path d="M420 130 C 490 130, 510 90, 560 90" stroke-dasharray="5 5"/>
+    <path d="M420 180 C 490 180, 510 260, 570 260" stroke-dasharray="5 5"/>
+  </g>
+
+  <!-- endpoint nodes -->
+  <g>
+    <circle cx="80" cy="90" r="10" fill="#22d3ee"/>
+    <circle cx="70" cy="260" r="10" fill="#22d3ee"/>
+    <circle cx="560" cy="90" r="10" fill="#22d3ee"/>
+    <circle cx="570" cy="260" r="10" fill="#22d3ee"/>
+  </g>
+
+  <g fill="#9ca3af" font-family="monospace" font-size="12">
+    <text x="80" y="74">GET /api</text>
+    <text x="20" y="280">DB</text>
+    <text x="525" y="74">queue</text>
+    <text x="540" y="280">client</text>
+  </g>
+
+  <text x="320" y="330" text-anchor="middle" fill="#cbd5e1" font-family="monospace" font-size="16" font-weight="bold">
+    Backend Service
+  </text>
 </svg>
