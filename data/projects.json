@@ -34,8 +34,11 @@
     ],
     "liveUrl": "https://www.tryfaru.com/",
     "codeUrl": null,
-    "demoVideoUrl": null,
-    "screenshots": [],
+    "demoVideoUrl": "/images/projects/tryfaru/demo.mp4",
+    "screenshots": [
+      "/images/projects/tryfaru/landing.png",
+      "/images/projects/tryfaru/detail.png"
+    ],
     "featured": true
   },
   {
@@ -88,8 +91,11 @@
     ],
     "liveUrl": "https://doobie-droid.github.io/unsplash-clone/",
     "codeUrl": null,
-    "demoVideoUrl": null,
-    "screenshots": [],
+    "demoVideoUrl": "/images/projects/unsplash/demo.mp4",
+    "screenshots": [
+       "/images/projects/unsplash/landing.png",
+      "/images/projects/unsplash/detail.png"
+    ],
     "featured": false
   },
   {
@@ -142,8 +148,10 @@
     ],
     "liveUrl": "https://shopify-hackathon-sigma.vercel.app/",
     "codeUrl": null,
-    "demoVideoUrl": null,
-    "screenshots": [],
+    "demoVideoUrl": "/images/projects/shopify/demo.mp4",
+    "screenshots": [
+      "/images/projects/shopify/landing.png"
+    ],
     "featured": false
   }
 ]
