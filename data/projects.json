@@ -152,8 +152,8 @@
       "Auto-generated API documentation via Laravel Scribe",
       "Clean, maintainable Laravel architecture"
     ],
-    "liveUrl": "https://pay4me.laravel.cloud/docs",
-    "codeUrl": null,
+    "liveUrl": null,
+    "codeUrl": "https://github.com/doobie-droid/pay4me",
     "demoVideoUrl": null,
     "screenshots": [],
     "featured": false

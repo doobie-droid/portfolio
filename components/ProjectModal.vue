@@ -97,11 +97,13 @@ export default {
             if (isOpen) {
                 this.previouslyFocusedElement = document.activeElement;
                 document.addEventListener('keydown', this.onKeydown);
+                this.lockBodyScroll();
                 this.$nextTick(() => {
                     this.$refs.closeButton && this.$refs.closeButton.focus();
                 });
             } else {
                 document.removeEventListener('keydown', this.onKeydown);
+                this.unlockBodyScroll();
                 if (this.previouslyFocusedElement) {
                     this.previouslyFocusedElement.focus();
                 }
@@ -110,8 +112,20 @@ export default {
     },
     beforeUnmount() {
         document.removeEventListener('keydown', this.onKeydown);
+        this.unlockBodyScroll();
     },
     methods: {
+        lockBodyScroll() {
+            const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+            document.body.style.overflow = 'hidden';
+            if (scrollbarWidth > 0) {
+                document.body.style.paddingRight = `${scrollbarWidth}px`;
+            }
+        },
+        unlockBodyScroll() {
+            document.body.style.overflow = '';
+            document.body.style.paddingRight = '';
+        },
         close() {
             this.$emit('close');
         },
