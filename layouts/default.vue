@@ -30,17 +30,20 @@
             </main>
 
             <footer
-                class="  pt-40 px-24 pb-14 font-extrabold font-mono flex flex-col lg:flex-row lg:justify-between gap-4 lg:gap-2 justify-center items-center">
-                <div class="flex gap-2  ">
-                    <NavListItem v-for="item in navLinks" :key="item.to" :to="item.to">
-                        {{ item.label }}
-                    </NavListItem>
-                </div>
-                <div class="  flex items-center  text-center text-sm text-zinc-400 dark:text-zinc-500 font-mono">
-                    © 2023-{{ new Date().getFullYear() }} Doobie. All rights reserved.
-                </div>
+                class="mt-24 border-t border-zinc-200 dark:border-zinc-800 px-6 md:px-12 lg:px-20 pt-10 pb-10 font-mono flex flex-col items-center gap-6">
+                <nav class="flex flex-wrap justify-center gap-x-2 gap-y-1 text-sm font-semibold text-zinc-500 dark:text-zinc-400">
+                    <template v-for="(item, index) in navLinks" :key="item.to">
+                        <NavListItem :to="item.to">{{ item.label }}</NavListItem>
+                        <span v-if="index < navLinks.length - 1" class="self-center text-zinc-300 dark:text-zinc-700"
+                            aria-hidden="true">•</span>
+                    </template>
+                </nav>
 
                 <SocialLinkList />
+
+                <p class="text-xs text-zinc-400 dark:text-zinc-500">
+                    © 2023–{{ new Date().getFullYear() }} Douglas Leslie. All rights reserved.
+                </p>
             </footer>
         </div>
     </div>

@@ -3,14 +3,16 @@
         <iframe :src="pdfUrl" title="Douglas Leslie's Resume PDF"
             class="w-full max-w-3xl h-[75vh] border border-black dark:border-white rounded-lg"></iframe>
 
-        <a :href="pdfUrl" target="_blank" rel="noopener noreferrer" download
-            class="px-5 py-3 rounded-md text-sm font-mono font-bold bg-primary dark:bg-yellow-400 text-white dark:text-black hover:bg-primary_hover transition">
-            Download Resume
-        </a>
-        <p class="text-sm">
-            Having trouble viewing it above?
-            <a :href="pdfUrl" target="_blank" rel="noopener noreferrer" class="link">Open Resume PDF</a> in a new tab.
-        </p>
+        <div class="flex flex-wrap justify-center gap-3 mt-2">
+            <a :href="pdfUrl" target="_blank" rel="noopener noreferrer"
+                class="px-5 py-3 rounded-md text-sm font-mono font-bold bg-primary dark:bg-yellow-400 text-white dark:text-black hover:bg-primary_hover transition">
+                Open Resume in New Tab
+            </a>
+            <a :href="pdfUrl" target="_blank" rel="noopener noreferrer" download
+                class="px-5 py-3 rounded-md text-sm font-mono font-bold border border-primary dark:border-yellow-400 text-primary dark:text-yellow-400 hover:bg-primary hover:text-white dark:hover:bg-yellow-400 dark:hover:text-black transition">
+                Download Resume
+            </a>
+        </div>
     </div>
 </template>
 
